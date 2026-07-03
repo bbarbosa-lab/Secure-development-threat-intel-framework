@@ -64,18 +64,13 @@ threat-informed-secure-development/
 │   ├── ssdf-owasp-attck-mapping.md
 │   ├── threat-intel-to-ssdf.md
 │   └── owasp-risks-to-controls.md
-├── examples/
-│   ├── fastapi-threat-shield/              # ← Main practical example (recommended)
-│   ├── nvd-dependency-check/
-│   └── stix-misp-consumer/
 ├── diagrams/
 │   ├── secure-development-lifecycle.png
 │   ├── threat-informed-decision-flow.png
 │   └── ssdf-owasp-attck-mapping.png
 ├── references/
 │   └── references-and-sources.md
-└── .github/workflows/
-    └── security-pipeline.yml
+
 ```
 
 
