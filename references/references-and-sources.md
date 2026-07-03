@@ -1,41 +1,42 @@
-# Fontes e Referências
+# References and Sources
 
-Este framework foi construído com base nas seguintes fontes oficiais e autoritativas (2025-2026):
+This framework was built upon the following official and authoritative sources (2025–2026):
 
-## Padrões e Frameworks Principais
+## Core Standards and Frameworks
 
 - **NIST SP 800-218** — Secure Software Development Framework (SSDF) v1.1
 - **OWASP Top 10:2025** — Web Application Security Risks
 - **OWASP Top 10 API Security Risks:2023**
-- **OWASP MASVS** — Mobile Application Security Verification Standard (usado como referência complementar para mobile)
-- **MITRE ATT&CK** — Enterprise + Mobile matrices
+- **OWASP MASVS** — Mobile Application Security Verification Standard (used as complementary reference for mobile security)
+- **MITRE ATT&CK** — Enterprise and Mobile matrices
 - **MITRE CVE + CWE** + **NVD (National Vulnerability Database)**
 
-## Threat Intelligence & Standards
+## Threat Intelligence Standards and Sources
 
-- **STIX 2.1 + TAXII 2.1** — OASIS Standards
+- **STIX 2.1 + TAXII 2.1** — OASIS Standards for structured threat intelligence exchange
 - **MISP** — Malware Information Sharing Platform (projecteu.org)
-- **Cisco Talos** — Threat Intelligence Research
-- **SANS Internet Storm Center (ISC) / DShield**
+- **Cisco Talos** — Threat Intelligence Research and reputation services
+- **SANS Internet Storm Center (ISC) / DShield** — Early warning and IP reputation data
 - **FIRST** — Forum of Incident Response and Security Teams
-- **CIS Benchmarks** — Center for Internet Security
+- **CIS Benchmarks** — Center for Internet Security hardening guidelines
 
-## Cursos e Materiais de Referência
+## Course Materials and Academic References
 
-- Material didático do curso de **Pós-Graduação em Red Team Operations e Offensive Cyber**
-- Aulas e Ebooks de **Daniel Lemeszenski** (Impacta Digital) sobre:
-  - Desenvolvimento Seguro
-  - Segurança de APIs e OWASP
-  - Desenvolvimento Seguro para Aplicativos Móveis (MASVS)
-  - Governança e Segurança para APIs
+- Course materials from the **Postgraduate Program in Red Team Operations and Offensive Cyber**
+- Lectures and Ebooks by **Daniel Lemeszenski** (Impacta Digital), covering:
+  - Secure Development
+  - API Security and OWASP
+  - Secure Development for Mobile Applications (MASVS)
+  - Governance and Security Strategies for APIs
+- Cisco's Cyber Threat Managment Course ( https://www.netacad.com/pt/courses/cyber-threat-management?courseLang=en-US )
 
-## Outras Referências Importantes
+## Additional Important References
 
 - Verizon DBIR (Data Breach Investigations Report)
-- Have I Been Pwned + breach reports públicos
+- Have I Been Pwned + public breach datasets
 - Cloud Security Alliance (CSA) guidance
-- DevSecOps maturity models
+- DevSecOps maturity models and industry reports
 
 ---
 
-**Nota**: Este repositório busca sintetizar essas fontes em um modelo prático e coeso para desenvolvedores. Sempre consulte as fontes originais para detalhes completos e atualizações oficiais.
+**Note**: This repository synthesizes these sources into a practical and cohesive model for developers. Always consult the original sources for complete details and official updates.
