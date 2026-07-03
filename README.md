@@ -1,6 +1,13 @@
-# Secure-Development-Threat-Intel-Framework
+# Secure Development Threat Intel Framework
 
 > **Building secure software by design, informed by real threats, standards, and intelligence.**
+
+<p align="center">
+  <img src="diagrams/secure-development-threat-intel-framework.jpg" alt="Secure Development Threat Intel Framework" width="100%">
+</p>
+
+
+**Integrating real threat intelligence into the software development lifecycle.**
 
 A practical framework that integrates **NIST SSDF**, **OWASP Top 10 (Web + API)**, **MITRE ATT&CK**, **CVE/CWE + NVD**, and structured threat intelligence (**STIX/TAXII + MISP + Talos**) into the entire software development lifecycle.
 
@@ -8,7 +15,7 @@ This repository demonstrates how to move from reactive security to **proactive, 
 
 ---
 
-## 🎯 The Core Philosophy (Mindset)
+##  The Core Philosophy (Mindset)
 
 Security is not a checklist you add at the end.  
 Security is a **continuous decision-making process** that starts at the whiteboard and lives in every line of code, every configuration, and every deployment.
@@ -17,9 +24,11 @@ The best way to build secure systems is to **understand how attackers actually t
 
 This framework treats **threat intelligence as a first-class input** to every phase of development — not just something the SOC consumes.
 
+## Threat-Informed Secure Development Workflow
+
 ---
 
-## 🧩 Frameworks That Actually Matter (2026)
+##  Frameworks That Actually Matter (2026)
 
 | Framework                        | Role in This Framework                          | Why It Matters for Developers                  | Priority |
 |----------------------------------|------------------------------------------------|------------------------------------------------|----------|
@@ -73,27 +82,9 @@ threat-informed-secure-development/
 
 ```
 
-
 ---
 
-##  Practical Examples Included
-
-### 1. FastAPI Threat Shield (Main Example)
-A production-ready middleware that:
-- Checks incoming requests against threat intelligence feeds (AbuseIPDB + local MISP)
-- Blocks or challenges known malicious IPs/domains
-- Logs security events in structured format (ready for STIX export)
-- Demonstrates defense-in-depth at the API edge
-
-### 2. NVD Dependency Check
-Automated CVE scanning in CI/CD pipeline with severity gating.
-
-### 3. STIX/MISP Consumer
-Example of consuming structured threat intelligence and converting it into actionable controls.
-
----
-
-## 📚 Documentation (Deep Dives)
+##  Documentation (Deep Dives)
 
 - [01 - Introduction and Mindset](./docs/01-introduction-and-mindset.md)
 - [02 - Core Frameworks](./docs/02-core-frameworks.md)
