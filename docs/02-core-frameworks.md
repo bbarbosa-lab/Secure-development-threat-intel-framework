@@ -1,23 +1,29 @@
-# 02 - Principais Frameworks do Threat-Informed Secure Development
+# 02 - Main Frameworks of Threat-Informed Secure Development
 
-Este documento explica brevemente cada framework usado neste repositório e por que ele foi escolhido.
+This document briefly explains each framework used in this repository and why it was chosen.
 
 ## NIST SSDF v1.1
-O framework mais completo para estruturar o **processo** de desenvolvimento seguro em uma organização. Usado como espinha dorsal deste modelo.
+
+The most complete framework for structuring the **secure development process** in an organization. Used as the backbone of this model.
 
 ## OWASP Top 10 2025 + OWASP Top 10 API 2023
-As listas mais usadas no mundo para priorizar riscos em aplicações web e APIs. Essenciais para qualquer pessoa que desenvolve software exposto na internet.
+
+The most widely used lists in the world for prioritizing risks in web applications and APIs. Essential for anyone developing software exposed to the internet.
 
 ## MITRE ATT&CK
-Permite que você pense como um atacante real. Em vez de "vou proteger contra SQL Injection", você pensa "como eu mitigo as técnicas T1059 e T1190 que estão sendo usadas ativamente contra aplicações como a minha?".
+
+Allows you to think like a real attacker. Instead of "I'm going to protect against SQL Injection," you think: "How do I mitigate techniques T1059 and T1190 that are being actively used against applications like mine?"
 
 ## MITRE CVE + CWE + NVD
-Fornece dados objetivos sobre vulnerabilidades conhecidas. Permite automação de priorização via CVSS e mapeamento para fraquezas raiz (CWE) e riscos OWASP.
+
+Provides objective data on known vulnerabilities. Enables automation of prioritization via CVSS and mapping to root weaknesses (CWE) and OWASP risks.
 
 ## STIX / TAXII + MISP
-Padrões abertos para trocar inteligência de ameaças de forma estruturada e automatizada. Permite que seu código "fale a mesma língua" que ferramentas profissionais de threat intel.
+
+Open standards for exchanging threat intelligence in a structured and automated way. Allows your code to "speak the same language" as professional threat intelligence tools.
 
 ## CIS Benchmarks
-Guias prescritivos de configuração segura para sistemas operacionais, containers, bancos de dados e cloud. Excelente para a fase Protect do SSDF.
 
-Esses frameworks, quando usados juntos, criam um sistema muito mais robusto do que usar qualquer um isoladamente.
+Prescriptive secure configuration guides for operating systems, containers, databases, and cloud environments. Excellent for the Protect phase of SSDF.
+
+When used together, these frameworks create a much more robust system than using any of them in isolation.
