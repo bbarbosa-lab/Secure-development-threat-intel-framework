@@ -58,7 +58,7 @@ threat-informed-secure-development/
 │   ├── 03-secure-development-lifecycle-ssdf.md
 │   ├── 04-owasp-top-10-2025.md
 │   ├── 05-mitre-attck-for-developers.md
-│   ├── 06-structured-threat-intelligence.md
+│   ├── 06-cve-cwe-nvd-practical-use.md
 │   └── 07-integrated-secure-development-model.md
 ├── mappings/                               # ← Highest value content
 │   ├── ssdf-owasp-attck-mapping.md
@@ -105,7 +105,7 @@ Example of consuming structured threat intelligence and converting it into actio
 - [03 - Secure Development Lifecycle with NIST SSDF](./docs/03-secure-development-lifecycle-ssdf.md)
 - [04 - OWASP Top 10 2025 + API Risks 2023](./docs/04-owasp-top-10-2025.md)
 - [05 - MITRE ATT&CK for Developers](./docs/05-mitre-attck-for-developers.md)
-- [06 - Structured Threat Intelligence (STIX, TAXII, MISP, Talos)](./docs/06-structured-threat-intelligence.md)
+- [06 - CVE and CVW practical use](./docs/06-cve-cwe-nvd-practical-use.md)
 - [07 - Integrated Secure Development Model](./docs/07-integrated-secure-development-model.md)
 
 ---
@@ -137,4 +137,5 @@ It reflects real learning from postgraduate studies in **Red Team Operations & O
 
 ---
 
+*Create by Bruno Barbosa*
 *Last updated: July 2026*
