@@ -1,63 +1,63 @@
-# 01 - Introdução e Mindset: Por que "Threat-Informed" Secure Development?
+# 01 - Introduction and Mindset: Why "Threat-Informed" Secure Development?
 
-## O Problema que Este Framework Resolve
+## The Problem This Framework Solves
 
-A maioria dos times de desenvolvimento ainda trata segurança como uma **fase** ou um **checklist** que aparece no final do sprint ou depois que o auditor encontra algo.
+Most development teams still treat security as a **phase** or a **checklist** that only appears at the end of the sprint or after an auditor finds something.
 
-Isso gera dois problemas graves:
+This creates two serious problems:
 
-1. **Falso senso de segurança** — "Passamos no SAST/DAST, então está seguro."
-2. **Reatividade cara** — Vulnerabilidades são descobertas tarde, quando o custo de correção é 10x~100x maior.
+1. **False sense of security** — "We passed SAST/DAST, so we're secure."
+2. **Expensive reactivity** — Vulnerabilities are discovered late, when the cost of fixing them is 10x–100x higher.
 
-O resultado? Aplicações que são "seguras o suficiente para passar no scan", mas que caem facilmente diante de um atacante real que usa técnicas atuais (não as de 5 anos atrás).
+The result? Applications that are "secure enough to pass the scan," but that collapse easily against a real attacker using current techniques (not the ones from five years ago).
 
-## O Mindset Correto
+## The Correct Mindset
 
-> **Segurança não é sobre adicionar controles. É sobre remover as condições que permitem que um ataque tenha sucesso.**
+> **Security is not about adding controls. It is about removing the conditions that allow an attack to succeed.**
+> In the culture of devsecops this is called Shift Left.
 
-Um sistema seguro é aquele que foi **projetado desde o início** para frustrar as técnicas que atacantes reais usam hoje.
+A secure system is one that was **designed from the beginning** to frustrate the techniques real attackers use today.
 
-Isso exige três coisas:
+This requires three things:
 
-- **Entender o adversário** (MITRE ATT&CK + Threat Intelligence real)
-- **Conhecer os riscos priorizados** para o tipo de aplicação que você está construindo (OWASP Top 10 Web + API)
-- **Ter um processo estruturado** que transforma esse conhecimento em decisões de design, código e pipeline (NIST SSDF)
+- **Understand the adversary** (MITRE ATT&CK + real Threat Intelligence)
+- **Know the prioritized risks** for the type of application you are building (OWASP Top 10 Web + API)
+- **Have a structured process** that turns this knowledge into design, code, and pipeline decisions (NIST SSDF)
 
-## Por que "Threat-Informed"?
+## Why "Threat-Informed"?
 
-Threat Intelligence não é só para times de SOC ou Red Team.
+Threat Intelligence is not just for SOC or Red Team teams.
 
-Quando bem usado no desenvolvimento, ele responde perguntas críticas como:
+When properly used in development, it answers critical questions such as:
 
-- Quais técnicas de ataque estão sendo usadas ativamente contra APIs/web apps neste momento? (Talos, MISP, OTX)
-- Quais CVEs novas e exploráveis afetam as bibliotecas que usamos? (NVD)
-- Quais padrões de comportamento (TTPs) os atacantes estão usando contra aplicações semelhantes à nossa? (MITRE ATT&CK)
-- Como os incidentes reais estão acontecendo em organizações do nosso setor? (FIRST, SANS ISC)
+- Which attack techniques are currently being used against APIs and web applications? (Talos, MISP, OTX)
+- Which new and exploitable CVEs affect the libraries we are using? (NVD)
+- What behavior patterns (TTPs) are attackers using against applications similar to ours? (MITRE ATT&CK)
+- How are real incidents unfolding in organizations within our sector? (FIRST, SANS ISC)
 
-Com essas respostas, você para de "adivinhar" o que proteger e começa a **priorizar com base em evidência**.
+With these answers, you stop guessing what to protect and start **prioritizing based on evidence**.
 
-## Defesa em Profundidade + Threat Intelligence
+## Defense in Depth + Threat Intelligence
 
-O conceito clássico de **Defense in Depth** (várias camadas de proteção) continua válido. Porém, em 2026, as camadas precisam ser **informadas por inteligência de ameaças atualizada**.
+The classic concept of **Defense in Depth** (multiple layers of protection) remains valid. However, in 2026, these layers must be **informed by up-to-date threat intelligence**.
 
-Exemplo prático:
-- Camada 1: WAF + API Gateway (bloqueia padrões conhecidos de ataque)
-- Camada 2: Middleware de Threat Intel (bloqueia IPs/domínios maliciosos reportados em feeds recentes)
-- Camada 3: Validação rigorosa de autorização no código (mitiga BOLA — OWASP API #1)
-- Camada 4: Logging estruturado + detecção de anomalias (permite resposta rápida e feedback para threat intel)
+**Practical example:**
 
-Quando uma camada falha (e eventualmente falha), as outras ainda sustentam a defesa.
+- **Layer 1:** WAF + API Gateway (blocks known attack patterns)
+- **Layer 2:** Threat Intel Middleware (blocks malicious IPs/domains reported in recent feeds)
+- **Layer 3:** Strict authorization validation in code (mitigates BOLA — OWASP API Security #1)
+- **Layer 4:** Structured logging + anomaly detection (enables fast response and feeds intelligence back into the system)
 
-## Como Este Repositório te Ajuda a Adotar Esse Mindset
+When one layer fails (and eventually one will), the others continue to hold the defense.
 
-Este repositório não é uma lista de ferramentas. É um **modelo de pensamento** + **mapeamentos práticos** + **exemplos de código** que mostram como aplicar esse mindset no dia a dia de quem desenvolve APIs e aplicações web/mobile.
+## How This Repository Helps You Adopt This Mindset
 
-Os documentos e mapeamentos foram construídos para responder:
+This repository is not a list of tools. It is a **thinking model** + **practical mappings** that show how to apply this mindset in the daily work of developers building APIs and web/mobile applications.
 
-- Como o NIST SSDF se conecta com OWASP e ATT&CK na prática?
-- Onde injetar threat intelligence (MISP, NVD, Talos) dentro do ciclo de desenvolvimento?
-- Quais controles concretos (em código, pipeline e arquitetura) mitigam os riscos mais importantes hoje?
+The documents and mappings were created to answer questions like:
 
-Se você internalizar esse modelo, sua forma de pensar sobre segurança muda permanentemente — de "vou rodar o scanner" para "vou projetar este endpoint de forma que as técnicas Txxxx do ATT&CK não funcionem aqui".
+- How does NIST SSDF connect with OWASP and MITRE ATT&CK in practice?
+- Where should threat intelligence (MISP, NVD, Talos, etc.) be injected into the development lifecycle?
+- What concrete controls (in code, pipeline, and architecture) mitigate the most relevant risks today?
 
-Esse é o nível de maturidade que recrutadores e times maduros de AppSec/DevSecOps procuram em 2026.
+Once you internalize this model, your thinking about security changes permanently — from *"I'm going to run the scanner"* to *"I'm going to design this endpoint so that ATT&CK technique Txxxx cannot succeed here."*
