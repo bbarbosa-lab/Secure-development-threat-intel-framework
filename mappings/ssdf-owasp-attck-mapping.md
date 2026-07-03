@@ -105,14 +105,3 @@ Threat Intelligence tells us *what is happening right now*.
 
 This mapping document turns these four perspectives into a single, actionable view. It helps teams stop treating security as a separate activity and instead embed it into everyday decisions about architecture, coding, testing, and operations.
 
-When used consistently, this approach shifts security from reactive checklist compliance to **proactive, threat-informed engineering** — the core philosophy of this repository.
-
-Organizations that master this integration build systems that are not only compliant with standards, but genuinely more resistant to the attacks that matter.
-
----
-
-**Related Documents**
-- [04 - OWASP Top 10 2025](./04-owasp-top-10-2025.md)
-- [05 - MITRE ATT&CK for Developers](./05-mitre-attck-for-developers.md)
-- [07 - Integrated Secure Development Model](./07-integrated-secure-development-model.md)
-- [OWASP Risks → Concrete Controls & Mitigations](./owasp-risks-to-controls.md)
