@@ -1,43 +1,48 @@
-# 03 - Ciclo de Vida Seguro com NIST SSDF v1.1
+# 03 - Secure Lifecycle with NIST SSDF v1.1
 
-O **NIST Secure Software Development Framework (SSDF)** v1.1 (SP 800-218) é atualmente o framework mais completo e autoritativo para estruturar o desenvolvimento seguro em uma organização.
+The **NIST Secure Software Development Framework (SSDF)** v1.1 (SP 800-218) is currently the most complete and authoritative framework for structuring secure development in an organization.
 
-Ele organiza as práticas em quatro grandes fases:
+It organizes practices into four major phases:
 
 ## 1. Prepare the Organization (PO)
-- Definir políticas, requisitos de segurança e cultura
-- Treinar equipes
-- Identificar e avaliar riscos de forma contínua
-- **Onde threat intel entra forte**: PO.2 (Identify and Assess Risks) — usar ATT&CK + feeds atuais para priorizar riscos reais, não genéricos.
+
+- Define security policies, requirements, and culture
+- Train teams
+- Continuously identify and assess risks
+- **Where threat intelligence enters strongly**: PO.2 (Identify and Assess Risks) — use ATT&CK + current feeds to prioritize real risks, not generic ones.
 
 ## 2. Protect the Software (PS)
-- Gerenciar componentes de terceiros com segurança
-- Proteger dados sensíveis (criptografia + key management)
-- Configuração segura de builds e deployments
-- Proteger o próprio código-fonte
-- **Onde threat intel entra**: PS.2 (3rd Party) via NVD + SCA tools. PS.3 via CIS Benchmarks + threat-informed hardening.
+
+- Securely manage third-party components
+- Protect sensitive data (encryption + key management)
+- Secure configuration of builds and deployments
+- Protect the source code itself
+- **Where threat intelligence enters**: PS.2 (3rd Party) via NVD + SCA tools. PS.3 via CIS Benchmarks + threat-informed hardening.
 
 ## 3. Produce Well-Secured Software (PW)
-- Práticas de codificação segura
-- Revisão de código + testes de segurança (SAST, DAST, IAST)
-- Gerenciar dívida técnica de segurança
-- **Onde threat intel entra**: PW.2 — escrever testes baseados em técnicas reais do ATT&CK (abuse cases).
+
+- Secure coding practices
+- Code review + security testing (SAST, DAST, IAST)
+- Manage security technical debt
+- **Where threat intelligence enters**: PW.2 — write tests based on real ATT&CK techniques (abuse cases).
 
 ## 4. Respond to Vulnerabilities (RV)
-- Processo de resposta a vulnerabilidades descobertas
-- Resposta a incidentes de segurança
-- Lições aprendidas e feedback para o processo
-- **Onde threat intel entra forte**: RV.1 e RV.2 — usar feeds para priorizar patching e melhorar detecção.
 
-## Por que SSDF é melhor que "só seguir OWASP Top 10"?
+- Vulnerability disclosure and response process
+- Security incident response
+- Lessons learned and feedback into the process
+- **Where threat intelligence enters strongly**: RV.1 and RV.2 — use feeds to prioritize patching and improve detection.
 
-OWASP Top 10 é excelente para **priorizar riscos**.  
-SSDF é excelente para **estruturar o processo** que previne, detecta e corrige esses riscos de forma sustentável.
+## Why SSDF is Better Than "Just Following OWASP Top 10"?
 
-O ideal é usar os dois juntos (como fazemos neste repositório).
+OWASP Top 10 is excellent for **prioritizing risks**.
 
-## Recomendação Prática
+SSDF is excellent for **structuring the process** that prevents, detects, and fixes those risks sustainably.
 
-Comece implementando as práticas de **Prepare** e **Protect** (especialmente gestão de dependências e configuração segura). Depois avance para **Produce** com revisões e testes threat-informed. Por último, maturate a fase de **Respond**.
+The ideal approach is to use both together (as we do in this repository).
 
-Esse ciclo, quando bem executado, reduz drasticamente o custo e o risco de segurança ao longo do tempo.
+## Practical Recommendation
+
+Start by implementing the **Prepare** and **Protect** practices (especially dependency management and secure configuration). Then move to **Produce** with threat-informed reviews and testing. Finally, mature the **Respond** phase.
+
+When executed well, this cycle dramatically reduces security cost and risk over time.
